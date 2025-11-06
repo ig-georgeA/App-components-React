@@ -138,7 +138,7 @@ export default function Inputs() {
           <div className={classes("row-layout group_2")}>
             <IgrChip className={classes("chip")}>
               <span slot="prefix">
-                <IgrAvatar initials="AB" shape="circle" className={classes("avatar_4")}></IgrAvatar>
+                <IgrAvatar initials="AB" shape="circle" className={classes("avatar_3")}></IgrAvatar>
               </span>
               <span>Country</span>
             </IgrChip>
@@ -152,17 +152,9 @@ export default function Inputs() {
           </div>
           <div className={classes("row-layout group_4")}>
             <IgrAvatar initials="GM" shape="circle" className={classes("avatar_1 avatar_1_1")}></IgrAvatar>
-            <IgrAvatar src="/src/assets/Avatar2.png" className={classes("avatar_2 avatar_2_1")}></IgrAvatar>
-            <IgrAvatar shape="circle" className={classes("avatar_3")}>
-              <span className={classes("material-icons")}>
-                <span>people</span>
-              </span>
-            </IgrAvatar>
-            <IgrAvatar shape="circle">
-              <span className={classes("material-icons")}>
-                <span>people</span>
-              </span>
-            </IgrAvatar>
+            <IgrAvatar src="/src/assets/Avatar2.png" shape="circle" className={classes("avatar_1 avatar_1_2")}></IgrAvatar>
+            <IgrAvatar src="/src/assets/Avatar5.png" className={classes("avatar_2 avatar_2_1")}></IgrAvatar>
+            <IgrAvatar src="/src/assets/Avatar3.png" shape="rounded" className={classes("avatar_4")}></IgrAvatar>
             <IgrAvatar shape="circle">
               <span className={classes("material-icons")}>
                 <span>people</span>

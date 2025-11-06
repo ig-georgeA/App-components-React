@@ -322,9 +322,6 @@
 .avatar_2 {
   --ig-size: var(--ig-size-medium);
 }
-.avatar_3 {
-  --ig-size: var(--ig-size-small);
-}
 .icon_3 {
   --size: 24px;
   font-size: 24px;
@@ -359,17 +356,23 @@
   height: max-content;
   min-width: min-content;
 }
-.avatar_4::part(base) {
+.avatar_3::part(base) {
   color: var(--ig-gray-100);
   background-color: var(--ig-secondary-300);
+}
+.avatar_4::part(base) {
+  background-color: transparent;
 }
 .avatar_1_1::part(base) {
   color: var(--ig-surface-500);
   background-color: var(--ig-secondary-200);
 }
-.avatar_2_1::part(base) {
+.avatar_1_2::part(base) {
   color: var(--ig-surface-500);
   background-color: var(--ig-secondary-200);
+}
+.avatar_2_1::part(base) {
+  background-color: transparent;
 }
 .badge {
   right: -8px;

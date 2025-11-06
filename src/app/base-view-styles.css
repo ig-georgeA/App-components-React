@@ -2,11 +2,11 @@
   --ig-font-family: "Lato";
   --ig-primary-500: #6C35CE;
   --ig-secondary-500: #6C35CE;
-  --ig-surface-500: #f8f9fa;
-  --ig-error-500: #dc3545;
-  --ig-success-500: #198754;
-  --ig-warn-500: #ffc107;
-  --ig-info-500: #0dcaf0;
+  --ig-surface-500: #f8f8fa;
+  --ig-error-500: #cf1a2b;
+  --ig-success-500: #689f38;
+  --ig-warn-500: #f56b1d;
+  --ig-info-500: #9c27b0;
   --ig-primary-400-contrast: white;
   --ig-primary-500-contrast: white;
   --ig-primary-600-contrast: white;
@@ -16,18 +16,17 @@
   --ig-secondary-400-contrast: white;
   --ig-secondary-500-contrast: white;
   --ig-secondary-A200-contrast: white;
+  --ig-error-400-contrast: white;
+  --ig-error-500-contrast: white;
   --ig-error-600-contrast: white;
   --ig-error-A400-contrast: white;
-  --ig-success-600-contrast: white;
-  --ig-success-700-contrast: white;
-  --ig-success-800-contrast: white;
-  --ig-success-A400-contrast: white;
-  --ig-info-600-contrast: black;
-  --ig-info-700-contrast: black;
-  --ig-info-800-contrast: black;
-  --ig-info-900-contrast: black;
-  --ig-info-A400-contrast: black;
-  --ig-info-A700-contrast: black;
+  --ig-warn-800-contrast: white;
+  --ig-warn-900-contrast: white;
+  --ig-warn-A700-contrast: white;
+  --ig-info-300-contrast: white;
+  --ig-info-400-contrast: white;
+  --ig-info-500-contrast: white;
+  --ig-info-A200-contrast: white;
 }
 
 /* Charts */
