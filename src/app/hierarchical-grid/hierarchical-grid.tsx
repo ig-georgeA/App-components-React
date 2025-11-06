@@ -1,9 +1,9 @@
-import { IgrColumn, IgrGridCreatedEventArgs, IgrHierarchicalGrid, IgrRowIsland } from 'igniteui-react-grids';
+import { IgrColumn, IgrGridCreatedEventArgs, IgrHierarchicalGrid, IgrRowIsland } from '@infragistics/igniteui-react-grids';
 import { CustomerDto } from '../models/NorthwindAPIIG/customer-dto';
 import { getOrderDetailDtoList, getOrderDtoList } from '../services/northwind-apiig';
 import { OrderDtoNorthwindAPIIG } from '../models/NorthwindAPIIG/order-dto-northwind-apiig';
 import { useGetCustomerDtoList } from '../hooks/northwind-apiig-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './hierarchical-grid.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

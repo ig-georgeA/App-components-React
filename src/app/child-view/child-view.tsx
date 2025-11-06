@@ -1,8 +1,8 @@
-import { IgrColumn, IgrGrid } from 'igniteui-react-grids';
-import { IgrFinancialChart, IgrFinancialChartModule } from 'igniteui-react-charts';
+import { IgrColumn, IgrGrid } from '@infragistics/igniteui-react-grids';
+import { IgrFinancialChart, IgrFinancialChartModule } from '@infragistics/igniteui-react-charts';
 import { useGetEmployees } from '../hooks/northwind-hooks';
 import { useGetStocks } from '../hooks/financial-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './child-view.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

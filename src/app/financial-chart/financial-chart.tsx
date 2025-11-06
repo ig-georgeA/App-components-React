@@ -1,4 +1,4 @@
-import { IgrFinancialChart, IgrFinancialChartModule } from 'igniteui-react-charts';
+import { IgrFinancialChart, IgrFinancialChartModule } from '@infragistics/igniteui-react-charts';
 import { useGetStocks } from '../hooks/financial-hooks';
 import styles from './financial-chart.module.css';
 import createClassTransformer from '../style-utils';

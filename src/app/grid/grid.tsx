@@ -1,10 +1,10 @@
-import { IgrActionStrip, IgrColumn, IgrColumnGroup, IgrGrid, IgrGridEditDoneEventArgs, IgrGridEditingActions, IgrGridPinningActions, IgrGridToolbar, IgrGridToolbarActions, IgrGridToolbarHiding, IgrGridToolbarPinning, IgrGridToolbarTitle, IgrPaginator, IgrRowDataEventArgs } from 'igniteui-react-grids';
+import { IgrActionStrip, IgrColumn, IgrColumnGroup, IgrGrid, IgrGridEditDoneEventArgs, IgrGridEditingActions, IgrGridPinningActions, IgrGridToolbar, IgrGridToolbarActions, IgrGridToolbarHiding, IgrGridToolbarPinning, IgrGridToolbarTitle, IgrPaginator, IgrRowDataEventArgs } from '@infragistics/igniteui-react-grids';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import { CustomerDto } from '../models/NorthwindAPIIG/customer-dto';
 import { deleteCustomerDto, postCustomerDto } from '../services/northwind-apiig';
 import { useGetCustomerDtoPagedResultDto } from '../hooks/northwind-apiig-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './grid.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

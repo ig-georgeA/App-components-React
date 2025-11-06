@@ -29,10 +29,20 @@
   flex-shrink: 0;
 }
 .group {
+  border-color: var(--ig-gray-500);
+  border-width: 1px;
+  border-style: solid;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+}
+.group_1 {
   height: max-content;
   min-width: 120px;
 }
-.group_1 {
+.group_2 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: baseline;
@@ -42,7 +52,7 @@
   min-width: 50px;
   min-height: max-content;
 }
-.group_2 {
+.group_3 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -52,14 +62,14 @@
   min-width: 50px;
   min-height: max-content;
 }
-.group_3 {
+.group_4 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   gap: 36px;
   position: relative;
 }
-.group_4 {
+.group_5 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -68,7 +78,7 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_5 {
+.group_6 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -78,7 +88,7 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_6 {
+.group_7 {
   background-color: var(--ig-surface-500);
   justify-content: flex-start;
   align-items: stretch;
@@ -91,7 +101,7 @@
   max-width: 500px;
   flex-shrink: 0;
 }
-.group_7 {
+.group_8 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -101,7 +111,7 @@
   min-height: 50px;
   flex-shrink: 0;
 }
-.group_8 {
+.group_9 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -111,13 +121,13 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_9 {
+.group_10 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   position: relative;
 }
-.group_10 {
+.group_11 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -127,7 +137,7 @@
   min-height: 50px;
   flex-shrink: 0;
 }
-.group_11 {
+.group_12 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -135,7 +145,7 @@
   margin: 8px;
   min-width: 50px;
 }
-.group_12 {
+.group_13 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -143,7 +153,7 @@
   margin: 8px;
   min-width: 50px;
 }
-.group_13 {
+.group_14 {
   border-color: var(--ig-gray-400);
   border-width: 2px;
   border-style: solid;
@@ -159,14 +169,14 @@
   min-height: 50px;
   flex-shrink: 0;
 }
-.group_14 {
+.group_15 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   gap: 8px;
   position: relative;
 }
-.group_15 {
+.group_16 {
   justify-content: flex-start;
   align-items: flex-end;
   align-content: flex-start;
@@ -322,9 +332,6 @@
 .avatar_2 {
   --ig-size: var(--ig-size-medium);
 }
-.avatar_3 {
-  --ig-size: var(--ig-size-small);
-}
 .icon_3 {
   --size: 24px;
   font-size: 24px;
@@ -359,17 +366,23 @@
   height: max-content;
   min-width: min-content;
 }
-.avatar_4::part(base) {
+.avatar_3::part(base) {
   color: var(--ig-gray-100);
   background-color: var(--ig-secondary-300);
+}
+.avatar_4::part(base) {
+  background-color: transparent;
 }
 .avatar_1_1::part(base) {
   color: var(--ig-surface-500);
   background-color: var(--ig-secondary-200);
 }
-.avatar_2_1::part(base) {
+.avatar_1_2::part(base) {
   color: var(--ig-surface-500);
   background-color: var(--ig-secondary-200);
+}
+.avatar_2_1::part(base) {
+  background-color: transparent;
 }
 .badge {
   right: -8px;

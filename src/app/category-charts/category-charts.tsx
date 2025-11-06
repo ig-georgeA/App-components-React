@@ -1,4 +1,4 @@
-import { IgrCategoryChart, IgrCategoryChartModule, IgrPieChart, IgrPieChartModule } from 'igniteui-react-charts';
+import { IgrCategoryChart, IgrCategoryChartModule, IgrPieChart, IgrPieChartModule } from '@infragistics/igniteui-react-charts';
 import { useGetBoxOfficeRevenue, useGetGlobalElectricityDemand, useGetTrading } from '../hooks/financial-hooks';
 import styles from './category-charts.module.css';
 import createClassTransformer from '../style-utils';

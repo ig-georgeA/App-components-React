@@ -1,4 +1,4 @@
-import { IgrButton, IgrCarousel, IgrCarouselSlide } from 'igniteui-react';
+import { IgrButton, IgrCarousel, IgrCarouselSlide } from '@infragistics/igniteui-react';
 import { useRef } from 'react';
 import styles from './carousel.module.css';
 import createClassTransformer from '../style-utils';

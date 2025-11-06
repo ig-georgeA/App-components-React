@@ -1,8 +1,8 @@
-import { IgrButton, IgrInput, IgrStep, IgrStepper } from 'igniteui-react';
-import { IgrColumn, IgrGrid } from 'igniteui-react-grids';
+import { IgrButton, IgrInput, IgrStep, IgrStepper } from '@infragistics/igniteui-react';
+import { IgrColumn, IgrGrid } from '@infragistics/igniteui-react-grids';
 import { useRef, useState } from 'react';
 import { useGetEmployees } from '../hooks/northwind-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './stepper.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

@@ -1,11 +1,11 @@
-import { IgrButton, IgrCalendar, IgrCard, IgrCardActions, IgrCardHeader, IgrCardMedia, IgrIconButton, IgrInput, IgrTab, IgrTabs } from 'igniteui-react';
-import { IgrCategoryChart, IgrCategoryChartModule } from 'igniteui-react-charts';
-import { IgrColumn, IgrGrid, IgrGridToolbar, IgrGridToolbarActions, IgrGridToolbarAdvancedFiltering, IgrGridToolbarTitle } from 'igniteui-react-grids';
+import { IgrButton, IgrCalendar, IgrCard, IgrCardActions, IgrCardHeader, IgrCardMedia, IgrIconButton, IgrInput, IgrTab, IgrTabs } from '@infragistics/igniteui-react';
+import { IgrCategoryChart, IgrCategoryChartModule } from '@infragistics/igniteui-react-charts';
+import { IgrColumn, IgrGrid, IgrGridToolbar, IgrGridToolbarActions, IgrGridToolbarAdvancedFiltering, IgrGridToolbarTitle } from '@infragistics/igniteui-react-grids';
 import { useState } from 'react';
 import { useGetBoxOfficeRevenue } from '../hooks/financial-hooks';
 import { useGetCustomerDtoList, useGetEmployeeDtoList } from '../hooks/northwind-apiig-hooks';
 import { useGetEmployees } from '../hooks/northwind-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './tab-layout.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

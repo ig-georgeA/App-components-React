@@ -1,4 +1,4 @@
-import { IgrButton, IgrCard, IgrCardActions, IgrCardContent, IgrCardHeader, IgrIconButton } from 'igniteui-react';
+import { IgrButton, IgrCard, IgrCardActions, IgrCardContent, IgrCardHeader, IgrIconButton } from '@infragistics/igniteui-react';
 import styles from './image.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

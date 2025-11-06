@@ -1,4 +1,4 @@
-import { IgrAvatar, IgrIconButton, IgrNavbar, IgrNavDrawer, IgrNavDrawerHeaderItem, IgrNavDrawerItem } from 'igniteui-react';
+import { IgrAvatar, IgrIconButton, IgrNavbar, IgrNavDrawer, IgrNavDrawerHeaderItem, IgrNavDrawerItem } from '@infragistics/igniteui-react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import styles from './app.module.css';

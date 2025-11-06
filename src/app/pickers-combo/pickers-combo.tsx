@@ -1,4 +1,4 @@
-import { IgrCombo, IgrDatePicker, IgrSelect, IgrSelectItem } from 'igniteui-react';
+import { IgrCombo, IgrDatePicker, IgrSelect, IgrSelectItem } from '@infragistics/igniteui-react';
 import { useState } from 'react';
 import { useGetCustomerDtoList } from '../hooks/northwind-apiig-hooks';
 import { useGetEmployees } from '../hooks/northwind-hooks';
