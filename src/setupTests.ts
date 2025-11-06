@@ -1,0 +1,25 @@
+import '@testing-library/jest-dom'
+import 'vitest-canvas-mock'
+import ResizeObserver from 'resize-observer-polyfill'
+import {vi} from 'vitest'
+
+(global as any).$ = {
+  ig: {
+    RevealSdkSettings: {
+      setBaseUrl: vi.fn(),
+      theme: {}
+    },
+    RevealTheme: vi.fn(),
+    RVDashboard: {
+      loadDashboard: vi.fn()
+    },
+    RevealView: vi.fn()
+  }
+};
+
+global.ResizeObserver = ResizeObserver;
+
+HTMLElement.prototype.scrollIntoView = vi.fn();
+HTMLElement.prototype.hidePopover = vi.fn();
+HTMLElement.prototype.showPopover = vi.fn();
+HTMLElement.prototype.togglePopover = vi.fn();
