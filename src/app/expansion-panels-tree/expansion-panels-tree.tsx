@@ -1,4 +1,4 @@
-import { IgrAccordion, IgrAvatar, IgrButton, IgrCard, IgrCardActions, IgrCardHeader, IgrCheckbox, IgrExpansionPanel, IgrInput, IgrList, IgrListItem, IgrTree, IgrTreeItem } from 'igniteui-react';
+import { IgrAccordion, IgrAvatar, IgrButton, IgrCard, IgrCardActions, IgrCardHeader, IgrCheckbox, IgrExpansionPanel, IgrInput, IgrList, IgrListItem, IgrTree, IgrTreeItem } from '@infragistics/igniteui-react';
 import { useState } from 'react';
 import { useGetNestedData } from '../hooks/nested-data-repeat-hooks';
 import styles from './expansion-panels-tree.module.css';

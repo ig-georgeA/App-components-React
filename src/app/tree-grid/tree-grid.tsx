@@ -1,8 +1,8 @@
-import { IgrActionStrip, IgrColumn, IgrGridEditDoneEventArgs, IgrGridEditingActions, IgrGridPinningActions, IgrGridToolbar, IgrGridToolbarTitle, IgrTreeGrid } from 'igniteui-react-grids';
+import { IgrActionStrip, IgrColumn, IgrGridEditDoneEventArgs, IgrGridEditingActions, IgrGridPinningActions, IgrGridToolbar, IgrGridToolbarTitle, IgrTreeGrid } from '@infragistics/igniteui-react-grids';
 import { EmployeeDto } from '../models/NorthwindAPIIG/employee-dto';
 import { putEmployeeDto } from '../services/northwind-apiig';
 import { useGetEmployeeDtoList } from '../hooks/northwind-apiig-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './tree-grid.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

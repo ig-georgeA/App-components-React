@@ -1,4 +1,4 @@
-import { IgrAvatar, IgrButton, IgrCard, IgrCardActions, IgrCardHeader, IgrCardMedia, IgrList, IgrListHeader, IgrListItem } from 'igniteui-react';
+import { IgrAvatar, IgrButton, IgrCard, IgrCardActions, IgrCardHeader, IgrCardMedia, IgrList, IgrListHeader, IgrListItem } from '@infragistics/igniteui-react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { EmployeeDto } from '../models/NorthwindAPIIG/employee-dto';

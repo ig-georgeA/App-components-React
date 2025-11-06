@@ -1,8 +1,8 @@
-import { IgrAvatar, IgrChip } from 'igniteui-react';
-import { IgrColumn, IgrGrid, IgrGridMasterDetailContext } from 'igniteui-react-grids';
+import { IgrAvatar, IgrChip } from '@infragistics/igniteui-react';
+import { IgrColumn, IgrGrid, IgrGridMasterDetailContext } from '@infragistics/igniteui-react-grids';
 import { OrderDto } from '../models/NorthwindSwagger/order-dto';
 import { useGetEmployeeDtoList } from '../hooks/northwind-apiig-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './master-detail-grid.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

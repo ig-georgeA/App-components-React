@@ -1,12 +1,12 @@
-import { IgrAvatar, IgrList, IgrListItem } from 'igniteui-react';
-import { IgrColumn, IgrGrid } from 'igniteui-react-grids';
-import { IgrFinancialChart, IgrFinancialChartModule } from 'igniteui-react-charts';
+import { IgrAvatar, IgrList, IgrListItem } from '@infragistics/igniteui-react';
+import { IgrColumn, IgrGrid } from '@infragistics/igniteui-react-grids';
+import { IgrFinancialChart, IgrFinancialChartModule } from '@infragistics/igniteui-react-charts';
 import { useState } from 'react';
 import { CustomerDto } from '../models/NorthwindAPIIG/customer-dto';
 import { useGetCustomerDtoList } from '../hooks/northwind-apiig-hooks';
 import { useGetEmployees } from '../hooks/northwind-hooks';
 import { useGetStocks } from '../hooks/financial-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './css-grid-layout.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

@@ -1,4 +1,4 @@
-import { IgrAvatar, IgrButton, IgrCalendar, IgrCard, IgrCardActions, IgrCardContent, IgrCardHeader, IgrCardMedia, IgrIconButton } from 'igniteui-react';
+import { IgrAvatar, IgrButton, IgrCalendar, IgrCard, IgrCardActions, IgrCardContent, IgrCardHeader, IgrCardMedia, IgrIconButton } from '@infragistics/igniteui-react';
 import styles from './card-calendar.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

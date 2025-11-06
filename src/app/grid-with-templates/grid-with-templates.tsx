@@ -1,7 +1,7 @@
-import { IgrAvatar, IgrButton, IgrChip } from 'igniteui-react';
-import { IgrCellTemplateContext, IgrColumn, IgrGrid, IgrGridToolbar, IgrGridToolbarActions, IgrGridToolbarAdvancedFiltering, IgrGridToolbarPinning, IgrGridToolbarTitle } from 'igniteui-react-grids';
+import { IgrAvatar, IgrButton, IgrChip } from '@infragistics/igniteui-react';
+import { IgrCellTemplateContext, IgrColumn, IgrGrid, IgrGridToolbar, IgrGridToolbarActions, IgrGridToolbarAdvancedFiltering, IgrGridToolbarPinning, IgrGridToolbarTitle } from '@infragistics/igniteui-react-grids';
 import { useGetEmployeeDtoList } from '../hooks/northwind-apiig-hooks';
-import 'igniteui-react-grids/grids/combined.js';
+import '@infragistics/igniteui-react-grids/grids/combined.js';
 import styles from './grid-with-templates.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';

@@ -1,4 +1,4 @@
-import { IgrAvatar, IgrBadge, IgrButton, IgrButtonGroup, IgrCheckbox, IgrChip, IgrDatePicker, IgrDateTimeInput, IgrIconButton, IgrInput, IgrRadio, IgrRadioGroup, IgrRangeSlider, IgrRating, IgrSlider, IgrSwitch, IgrTextarea, IgrToggleButton } from 'igniteui-react';
+import { IgrAvatar, IgrBadge, IgrButton, IgrButtonGroup, IgrCheckbox, IgrChip, IgrDatePicker, IgrDateTimeInput, IgrIconButton, IgrInput, IgrRadio, IgrRadioGroup, IgrRangeSlider, IgrRating, IgrSlider, IgrSwitch, IgrTextarea, IgrToggleButton } from '@infragistics/igniteui-react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import styles from './inputs.module.css';
@@ -38,35 +38,37 @@ export default function Inputs() {
     <>
       <div className={classes("row-layout inputs-container")}>
         <div className={classes("column-layout column-layout_1")}>
-          <IgrInput type="email" value={value ?? ""} label="Email address" outlined={false} onChange={(e) => setValue(e.detail)} className={classes("input")}>
-            <span slot="prefix">
-              <span className={classes("material-icons icon")}>
-                <span>mail</span>
+          <div className={classes("column-layout group")}>
+            <IgrInput type="email" value={value ?? ""} label="Email address" outlined={false} onChange={(e) => setValue(e.detail)} className={classes("input")}>
+              <span slot="prefix">
+                <span className={classes("material-icons icon")}>
+                  <span>mail</span>
+                </span>
               </span>
-            </span>
-            <span slot="suffix">
-              <span className={classes("material-icons icon")}>
-                <span>clear</span>
+              <span slot="suffix">
+                <span className={classes("material-icons icon")}>
+                  <span>clear</span>
+                </span>
               </span>
-            </span>
-          </IgrInput>
-          <IgrInput value={value1 ?? ""} label="I'm disabled" disabled={true} outlined={false} onChange={(e) => setValue1(e.detail)} className={classes("input")}></IgrInput>
-          <IgrInput value={value2 ?? ""} label="Label +prefix+box+help" outlined={false} onChange={(e) => setValue2(e.detail)} className={classes("input")}>
-            <span slot="prefix">
-              <span className={classes("material-icons icon")}>
-                <span>person</span>
+            </IgrInput>
+            <IgrInput value={value1 ?? ""} label="I'm disabled" disabled={true} outlined={false} onChange={(e) => setValue1(e.detail)} className={classes("input")}></IgrInput>
+            <IgrInput value={value2 ?? ""} label="Label +prefix+box+help" outlined={false} onChange={(e) => setValue2(e.detail)} className={classes("input")}>
+              <span slot="prefix">
+                <span className={classes("material-icons icon")}>
+                  <span>person</span>
+                </span>
               </span>
-            </span>
-            <span slot="helper-text">sample hint text</span>
-          </IgrInput>
-          <IgrInput value={value3 ?? ""} label="Label" placeholder="Label/Placeholder" outlined={false} onChange={(e) => setValue3(e.detail)} className={classes("input")}></IgrInput>
+              <span slot="helper-text">sample hint text</span>
+            </IgrInput>
+            <IgrInput value={value3 ?? ""} label="Label" placeholder="Label/Placeholder" outlined={false} onChange={(e) => setValue3(e.detail)} className={classes("input")}></IgrInput>
+          </div>
           <IgrDateTimeInput value={value4} label="Date-box-large" outlined={false} inputFormat="MM/dd/yyyy" displayFormat="longDate" spinLoop={true} min={date} max={date1} onChange={(e) => setValue4(e.detail ?? undefined)} className={classes("date-time-input")}></IgrDateTimeInput>
           <IgrDateTimeInput value={value5} label="Date-box style - input format 2+large" outlined={false} inputFormat="dd/MM/yyyy" displayFormat="longDate" spinLoop={true} min={date} max={date1} onChange={(e) => setValue5(e.detail ?? undefined)} className={classes("date-time-input")}></IgrDateTimeInput>
           <IgrTextarea placeholder="Type here" required={true} outlined={false} className={classes("textarea")}></IgrTextarea>
-          <div className={classes("group")}>
+          <div className={classes("group_1")}>
             <IgrDatePicker label="Date" outlined={false}></IgrDatePicker>
           </div>
-          <div className={classes("row-layout group_1")}>
+          <div className={classes("row-layout group_2")}>
             <IgrChip className={classes("chip")}>
               <span slot="prefix">
                 <span className={classes("material-icons icon_1")}>
@@ -135,41 +137,33 @@ export default function Inputs() {
               <span>Disabled</span>
             </IgrChip>
           </div>
-          <div className={classes("row-layout group_2")}>
+          <div className={classes("row-layout group_3")}>
             <IgrChip className={classes("chip")}>
               <span slot="prefix">
-                <IgrAvatar initials="AB" shape="circle" className={classes("avatar_4")}></IgrAvatar>
+                <IgrAvatar initials="AB" shape="circle" className={classes("avatar_3")}></IgrAvatar>
               </span>
               <span>Country</span>
             </IgrChip>
           </div>
           <IgrSlider value={value6} disabled={true} min={0} max={100} step={10} primaryTicks={3} secondaryTicks={2} hideSecondaryLabels={false} discreteTrack={true} onChange={(e) => setValue6(e.detail)} className={classes("slider")}></IgrSlider>
-          <div className={classes("column-layout group_3")}>
+          <div className={classes("column-layout group_4")}>
             <IgrSlider value={value7} min={0} max={100} primaryTicks={3} secondaryTicks={2} hideSecondaryLabels={false} onChange={(e) => setValue7(e.detail)} className={classes("slider")}></IgrSlider>
             <IgrRangeSlider lower={20} upper={80} min={0} max={100} step={10} primaryTicks={3} secondaryTicks={2} discreteTrack={true} className={classes("range-slider")}></IgrRangeSlider>
             <IgrRangeSlider lower={20} upper={80} min={0} max={100} step={10} primaryTicks={6} discreteTrack={true} className={classes("range-slider")}></IgrRangeSlider>
             <IgrSlider value={value8} min={0} max={100} step={10} primaryTicks={3} secondaryTicks={2} tickOrientation="mirror" discreteTrack={true} onChange={(e) => setValue8(e.detail)} className={classes("slider_1")}></IgrSlider>
           </div>
-          <div className={classes("row-layout group_4")}>
+          <div className={classes("row-layout group_5")}>
             <IgrAvatar initials="GM" shape="circle" className={classes("avatar_1 avatar_1_1")}></IgrAvatar>
-            <IgrAvatar src="/src/assets/Avatar2.png" className={classes("avatar_2 avatar_2_1")}></IgrAvatar>
-            <IgrAvatar shape="circle" className={classes("avatar_3")}>
-              <span className={classes("material-icons")}>
-                <span>people</span>
-              </span>
-            </IgrAvatar>
-            <IgrAvatar shape="circle">
-              <span className={classes("material-icons")}>
-                <span>people</span>
-              </span>
-            </IgrAvatar>
+            <IgrAvatar src="/src/assets/Avatar2.png" shape="circle" className={classes("avatar_1 avatar_1_2")}></IgrAvatar>
+            <IgrAvatar src="/src/assets/Avatar5.png" className={classes("avatar_2 avatar_2_1")}></IgrAvatar>
+            <IgrAvatar src="/src/assets/Avatar3.png" shape="rounded" className={classes("avatar_4")}></IgrAvatar>
             <IgrAvatar shape="circle">
               <span className={classes("material-icons")}>
                 <span>people</span>
               </span>
             </IgrAvatar>
           </div>
-          <div className={classes("row-layout group_5")}>
+          <div className={classes("row-layout group_6")}>
             <span className={classes("material-icons icon_1")}>
               <span>person</span>
             </span>
@@ -185,7 +179,7 @@ export default function Inputs() {
             <IgrRating className={classes("rating")}></IgrRating>
           </div>
         </div>
-        <div className={classes("column-layout group_6")}>
+        <div className={classes("column-layout group_7")}>
           <IgrInput value={value9 ?? ""} label="Label + prefix + suffix + border+small" outlined={true} onChange={(e) => setValue9(e.detail)} className={classes("input_1")}>
             <span slot="prefix">
               <p className={classes("typography__body-2 text")}>
@@ -213,13 +207,13 @@ export default function Inputs() {
             </span>
             <span slot="helper-text">sample hint text</span>
           </IgrInput>
-          <div className={classes("group")}>
+          <div className={classes("group_1")}>
             <IgrDatePicker label="Date (dropdown)" outlined={true}></IgrDatePicker>
           </div>
           <IgrDateTimeInput value={value14} label="Date" outlined={true} inputFormat="MM/dd/yyyy" displayFormat="mediumDate" spinLoop={true} min={date} max={date1} onChange={(e) => setValue14(e.detail ?? undefined)} className={classes("date-time-input_1")}></IgrDateTimeInput>
           <IgrDateTimeInput value={value15} label="Date" outlined={true} inputFormat="dd/MM/yyyy" displayFormat="shortTime" spinLoop={true} min={date} max={date1} onChange={(e) => setValue15(e.detail ?? undefined)} className={classes("date-time-input_1")}></IgrDateTimeInput>
           <IgrTextarea placeholder="Type here" required={true} outlined={true} className={classes("textarea")}></IgrTextarea>
-          <div className={classes("row-layout group_7")}>
+          <div className={classes("row-layout group_8")}>
             <IgrButton type="button" onClick={() => navigate(`/lists-data`)} className={classes("button")}>
               <span className={classes("material-icons")}>
                 <span>star</span>
@@ -280,8 +274,8 @@ export default function Inputs() {
             <a href="https://www.youtube.com/playlist?list=PLZ4rRHIJepBuKeP2WqXZUtG8LAYmyHHsa" target="_blank" className={classes("typography__body-1 hyperlink")}>
               <span>YouTube playlist</span>
             </a>
-            <div className={classes("row-layout group_8")}>
-              <div className={classes("row-layout group_9")}>
+            <div className={classes("row-layout group_9")}>
+              <div className={classes("row-layout group_10")}>
                 <IgrIconButton variant="flat">
                   <span className={classes("material-icons")}>
                     <span>email</span>
@@ -293,7 +287,7 @@ export default function Inputs() {
                   </span>
                 </IgrBadge>
               </div>
-              <div className={classes("row-layout group_9")}>
+              <div className={classes("row-layout group_10")}>
                 <span className={classes("material-icons icon_3")}>
                   <span>notifications</span>
                 </span>
@@ -303,7 +297,7 @@ export default function Inputs() {
                   </span>
                 </IgrBadge>
               </div>
-              <div className={classes("row-layout group_9")}>
+              <div className={classes("row-layout group_10")}>
                 <span className={classes("material-icons icon_3")}>
                   <span>mail</span>
                 </span>
@@ -313,7 +307,7 @@ export default function Inputs() {
                   </span>
                 </IgrBadge>
               </div>
-              <div className={classes("row-layout group_9")}>
+              <div className={classes("row-layout group_10")}>
                 <span className={classes("material-icons icon_3")}>
                   <span>mail</span>
                 </span>
@@ -329,8 +323,8 @@ export default function Inputs() {
               </IgrBadge>
             </div>
           </div>
-          <div className={classes("column-layout group_10")}>
-            <div className={classes("row-layout group_11")}>
+          <div className={classes("column-layout group_11")}>
+            <div className={classes("row-layout group_12")}>
               <IgrButtonGroup className={classes("button-group")}>
                 <IgrToggleButton>
                   <span className={classes("material-icons")}>
@@ -353,7 +347,7 @@ export default function Inputs() {
               </IgrSwitch>
               <IgrSwitch checked={checked1} onChange={(e) => setChecked1(e.detail.checked)} className={classes("user-input_1")}></IgrSwitch>
             </div>
-            <div className={classes("row-layout group_12")}>
+            <div className={classes("row-layout group_13")}>
               <IgrCheckbox checked={checked2} onChange={(e) => setChecked2(e.detail.checked)} className={classes("checkbox")}></IgrCheckbox>
               <IgrCheckbox labelPosition="after" checked={checked3} onChange={(e) => setChecked3(e.detail.checked)} className={classes("checkbox")}>
                 <span>Does it work?</span>
@@ -363,9 +357,9 @@ export default function Inputs() {
               </IgrCheckbox>
             </div>
           </div>
-          <div className={classes("column-layout group_13")}>
-            <div className={classes("row-layout group_14")}>
-              <div className={classes("row-layout group_14")}>
+          <div className={classes("column-layout group_14")}>
+            <div className={classes("row-layout group_15")}>
+              <div className={classes("row-layout group_15")}>
                 <p className={classes("typography__body-1 text_1")}>
                   <span>Initial value:</span>
                 </p>
@@ -373,7 +367,7 @@ export default function Inputs() {
                   <span>1</span>
                 </p>
               </div>
-              <div className={classes("row-layout group_14")}>
+              <div className={classes("row-layout group_15")}>
                 <p className={classes("typography__body-1 text_1")}>
                   <span>Current value</span>
                 </p>
@@ -382,7 +376,7 @@ export default function Inputs() {
                 </p>
               </div>
             </div>
-            <div className={classes("row-layout group_9")}>
+            <div className={classes("row-layout group_10")}>
               <IgrRadioGroup value={radioGroupVar.toString()} onChange={(e) => setRadioGroupVar(parseFloat(e.detail.value ?? ''))} className={classes("radio-group")}>
                 <IgrRadio value="1" key="4abd3a0f-1cda-45ab-84a7-fb6941d31698">
                   <span>Label</span>
@@ -407,7 +401,7 @@ export default function Inputs() {
               </IgrRadioGroup>
             </div>
           </div>
-          <div className={classes("row-layout group_15")}>
+          <div className={classes("row-layout group_16")}>
             <IgrInput value={value16} label="Group name" required={true} outlined={true} onChange={(e) => setValue16(e.detail)} className={classes("input_2")}>
               <p slot="value-missing">This field is required</p>
             </IgrInput>

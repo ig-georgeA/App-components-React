@@ -1,4 +1,4 @@
-import { IgrBanner, IgrButton, IgrDialog, IgrDropdown, IgrDropdownHeader, IgrDropdownItem, IgrIconButton, IgrInput, IgrSnackbar } from 'igniteui-react';
+import { IgrBanner, IgrButton, IgrDialog, IgrDropdown, IgrDropdownHeader, IgrDropdownItem, IgrIconButton, IgrInput, IgrSnackbar } from '@infragistics/igniteui-react';
 import { useRef, useState } from 'react';
 import styles from './dialogs-and-dropdowns.module.css';
 import createClassTransformer from '../style-utils';
